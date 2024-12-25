@@ -21,6 +21,24 @@ namespace adas{
             case 'S':--pose.y;break;
         }
     }
+    //左转函数
+    void ExecutorImpl::TurnLeft(){
+        switch (pose.heading) {
+            case 'E':pose.heading = 'N';break;
+            case 'N':pose.heading = 'W';break;
+            case 'W':pose.heading = 'S';break;
+            case 'S':pose.heading = 'E';break;
+        }
+    }
+    //右转函数
+    void ExecutorImpl::TurnRight(){
+        switch (pose.heading) {
+            case 'E':pose.heading = 'S';break;
+            case 'S':pose.heading = 'W';break;
+            case 'W':pose.heading = 'N';break;
+            case 'N':pose.heading = 'E';break;
+        }
+    }
     //执行指令
     void ExecutorImpl::Execute(const std::string& commands){
         for (const auto cmd : commands) {
@@ -29,20 +47,10 @@ namespace adas{
                     Move();
                     break;
                 case 'L':
-                    switch(pose.heading){
-                        case 'E':pose.heading = 'N';break;
-                        case 'N':pose.heading = 'W';break;
-                        case 'W':pose.heading = 'S';break;
-                        case 'S':pose.heading = 'E';break;
-                    }
+                    TurnLeft();
                     break;
                 case 'R':
-                    switch(pose.heading){
-                        case 'E':pose.heading = 'S';break;
-                        case 'S':pose.heading = 'W';break;
-                        case 'W':pose.heading = 'N';break;
-                        case 'N':pose.heading = 'E';break;
-                    }
+                    TurnRight();
                     break;
             }
         }    

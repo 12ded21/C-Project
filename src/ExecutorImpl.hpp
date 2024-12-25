@@ -5,6 +5,8 @@ namespace adas{
         Pose pose;
     private:
         void Move(void);
+        void TurnLeft(void);
+        void TurnRight(void);
     public:
         ExecutorImpl(const Pose& p = {0,0,'N'});
         ~ExecutorImpl(void) = default;
