@@ -1,3 +1,4 @@
+#pragma once
 #include"..\include\Executor.hpp"
 namespace adas{
     class ExecutorImpl final : public Executor{
