@@ -86,17 +86,34 @@ src/CMakeFiles/training.dir/ExecutorImpl.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training.dir/ExecutorImpl.cpp.s"
 	cd /d C:\Users\14212\Desktop\C-Project\build\src && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\14212\Desktop\C-Project\src\ExecutorImpl.cpp -o CMakeFiles\training.dir\ExecutorImpl.cpp.s
 
+src/CMakeFiles/training.dir/PoseHandler.cpp.obj: src/CMakeFiles/training.dir/flags.make
+src/CMakeFiles/training.dir/PoseHandler.cpp.obj: src/CMakeFiles/training.dir/includes_CXX.rsp
+src/CMakeFiles/training.dir/PoseHandler.cpp.obj: C:/Users/14212/Desktop/C-Project/src/PoseHandler.cpp
+src/CMakeFiles/training.dir/PoseHandler.cpp.obj: src/CMakeFiles/training.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/training.dir/PoseHandler.cpp.obj"
+	cd /d C:\Users\14212\Desktop\C-Project\build\src && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/training.dir/PoseHandler.cpp.obj -MF CMakeFiles\training.dir\PoseHandler.cpp.obj.d -o CMakeFiles\training.dir\PoseHandler.cpp.obj -c C:\Users\14212\Desktop\C-Project\src\PoseHandler.cpp
+
+src/CMakeFiles/training.dir/PoseHandler.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training.dir/PoseHandler.cpp.i"
+	cd /d C:\Users\14212\Desktop\C-Project\build\src && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\14212\Desktop\C-Project\src\PoseHandler.cpp > CMakeFiles\training.dir\PoseHandler.cpp.i
+
+src/CMakeFiles/training.dir/PoseHandler.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training.dir/PoseHandler.cpp.s"
+	cd /d C:\Users\14212\Desktop\C-Project\build\src && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\14212\Desktop\C-Project\src\PoseHandler.cpp -o CMakeFiles\training.dir\PoseHandler.cpp.s
+
 # Object files for target training
 training_OBJECTS = \
-"CMakeFiles/training.dir/ExecutorImpl.cpp.obj"
+"CMakeFiles/training.dir/ExecutorImpl.cpp.obj" \
+"CMakeFiles/training.dir/PoseHandler.cpp.obj"
 
 # External object files for target training
 training_EXTERNAL_OBJECTS =
 
 src/libtraining.a: src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj
+src/libtraining.a: src/CMakeFiles/training.dir/PoseHandler.cpp.obj
 src/libtraining.a: src/CMakeFiles/training.dir/build.make
 src/libtraining.a: src/CMakeFiles/training.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libtraining.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libtraining.a"
 	cd /d C:\Users\14212\Desktop\C-Project\build\src && $(CMAKE_COMMAND) -P CMakeFiles\training.dir\cmake_clean_target.cmake
 	cd /d C:\Users\14212\Desktop\C-Project\build\src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\training.dir\link.txt --verbose=$(VERBOSE)
 

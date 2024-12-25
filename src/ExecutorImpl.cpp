@@ -1,6 +1,7 @@
 //.hpp文件用于声明；.cpp文件用于定义函数；名字空间可区分不同的开发者
 #include"ExecutorImpl.hpp"
 #include "Command.hpp"
+#include<unordered_map>
 #include<iostream>
 #include<memory>
 namespace adas{
@@ -9,13 +10,9 @@ namespace adas{
         return new ExecutorImpl(p);
     }
     //构造函数
-    ExecutorImpl::ExecutorImpl(const Pose& p){
-        pose.heading = p.heading;
-        pose.x = p.x;
-        pose.y = p.y;
-    }
-    //移动函数
-    void ExecutorImpl::Move(){
+    ExecutorImpl::ExecutorImpl(const Pose& p) : poseHandler(p){}
+    /*//移动函数
+    void PoseHandler::Move(){
         switch (pose.heading) {
             case 'E': ++pose.x;break;
             case 'W':--pose.x;break;
@@ -24,7 +21,8 @@ namespace adas{
         }
     }
     //左转函数
-    void ExecutorImpl::TurnLeft(){
+    void PoseHandler::TurnLeft()
+    {
         switch (pose.heading) {
             case 'E':pose.heading = 'N';break;
             case 'N':pose.heading = 'W';break;
@@ -49,10 +47,21 @@ namespace adas{
     bool ExecutorImpl::IsFast(){
         return fast;
     }
+    */
     //执行指令
     void ExecutorImpl::Execute(const std::string& commands){
+        std::unordered_map<char,std::function<void(PoseHandler& poseHandler)>> cmderMap;
+        cmderMap.emplace('M', MoveCommand());
+        cmderMap.emplace('L', TurnLeftCommand());
+        cmderMap.emplace('R', TurnRightCommand());
+        cmderMap.emplace('F', FastCommand());
+        
         for (const auto cmd : commands) {
-            std::unique_ptr<ICommand> cmder;
+            auto it=cmderMap.find(cmd);
+            if(it!=cmderMap.end()){
+                it->second(poseHandler);
+            }
+           /* std::unique_ptr<ICommand> cmder;
             if (cmd == 'M')
                 cmder = std::make_unique<MoveCommand>();
             else
@@ -65,13 +74,11 @@ namespace adas{
                         if(cmd == 'F')
                             cmder = std::make_unique<FastCommand>();
             if(cmder)
-                cmder->DoOperate(*this);
+                cmder->DoOperate(*this);*/
         }    
     }
     //查询
     Pose ExecutorImpl::Query(void){
-        /*std::cout<<"The location of the vehicle is ( "<<pose.x<<" , "<<pose.y<<")"<<endl;
-        std::cout<<"The heading of the vehicle is "<<pose.heading<<endl;*/
-        return pose;
+        return poseHandler.Query();
     }
 };

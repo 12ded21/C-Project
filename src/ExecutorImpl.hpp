@@ -1,10 +1,9 @@
 #pragma once
-#include"..\include\Executor.hpp"
+#include"PoseHandler.hpp"
 namespace adas{
     class ExecutorImpl final : public Executor{
     private:
-        Pose pose;
-        bool fast{false};
+        PoseHandler poseHandler;
     //接口抽象，虚基类
     public:
         void Move(void);
