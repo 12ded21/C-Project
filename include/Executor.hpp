@@ -1,4 +1,3 @@
-//#pragma once
 #include <string>
 namespace adas{
     struct Pose{

@@ -1,4 +1,3 @@
-//#pragma once
 //.hpp文件用于声明；.cpp文件用于定义函数；名字空间可区分不同的开发者
 #include"ExecutorImpl.hpp"
 #include<iostream>
@@ -13,17 +12,21 @@ namespace adas{
         pose.x = p.x;
         pose.y = p.y;
     }
+    //移动函数
+    void ExecutorImpl::Move(){
+        switch (pose.heading) {
+            case 'E': ++pose.x;break;
+            case 'W':--pose.x;break;
+            case 'N':++pose.y;break;
+            case 'S':--pose.y;break;
+        }
+    }
     //执行指令
     void ExecutorImpl::Execute(const std::string& commands){
         for (const auto cmd : commands) {
             switch(cmd){
                 case 'M':
-                    switch(pose.heading){
-                        case 'E':++pose.x;break;
-                        case 'W':--pose.x;break;
-                        case 'N':++pose.y;break;
-                        case 'S':--pose.y;break;
-                    }
+                    Move();
                     break;
                 case 'L':
                     switch(pose.heading){
