@@ -40,6 +40,14 @@ namespace adas{
             case 'N':pose.heading = 'E';break;
         }
     }
+    //加速转换指令
+    void ExecutorImpl::Fast(){
+        fast = !fast;
+    }
+    //是否加速指令
+    bool ExecutorImpl::IsFast(){
+        return fast;
+    }
     //执行指令
     void ExecutorImpl::Execute(const std::string& commands){
         for (const auto cmd : commands) {
@@ -52,6 +60,9 @@ namespace adas{
                 else
                     if(cmd == 'R')
                         cmder = std::make_unique<TurnRightCommand>();
+                    else
+                        if(cmd == 'F')
+                            cmder = std::make_unique<FastCommand>();
             if(cmder)
                 cmder->DoOperate(*this);
         }    
