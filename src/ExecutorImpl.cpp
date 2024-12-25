@@ -1,6 +1,7 @@
 //.hpp文件用于声明；.cpp文件用于定义函数；名字空间可区分不同的开发者
 #include"ExecutorImpl.hpp"
 #include<iostream>
+#include<memory>
 namespace adas{
     //新建一个对象，返回的是基类的指针
     Executor* Executor::NewExecutor(const Pose& p){
@@ -42,17 +43,17 @@ namespace adas{
     //执行指令
     void ExecutorImpl::Execute(const std::string& commands){
         for (const auto cmd : commands) {
-            switch(cmd){
-                case 'M':
-                    Move();
-                    break;
-                case 'L':
-                    TurnLeft();
-                    break;
-                case 'R':
-                    TurnRight();
-                    break;
-            }
+            std::unique_ptr<ICommand> cmder;
+            if (cmd == 'M')
+                cmder = std::make_unique<MoveCommand>();
+            else
+                if(cmd == 'L')
+                    cmder = std::make_unique<TurnLeftCommand>();
+                else
+                    if(cmd == 'R')
+                        cmder = std::make_unique<TurnRightCommand>();
+            if(cmder)
+                cmder->DoOperate(*this);
         }    
     }
     //查询
