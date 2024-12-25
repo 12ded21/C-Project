@@ -50,12 +50,19 @@ namespace adas{
     */
     //执行指令
     void ExecutorImpl::Execute(const std::string& commands){
-        std::unordered_map<char,std::function<void(PoseHandler& poseHandler)>> cmderMap;
+        /*std::unordered_map<char,std::function<void(PoseHandler& poseHandler)>> cmderMap;
         cmderMap.emplace('M', MoveCommand());
         cmderMap.emplace('L', TurnLeftCommand());
         cmderMap.emplace('R', TurnRightCommand());
-        cmderMap.emplace('F', FastCommand());
-        
+        cmderMap.emplace('F', FastCommand());*/
+
+        const std::unordered_map<char, std::function<void(PoseHandler & poseHandler)>> cmderMap{
+            {'M', MoveCommand()},
+            {'L', TurnLeftCommand()},
+            {'R', TurnRightCommand()},
+            {'F', FastCommand()},
+        };
+
         for (const auto cmd : commands) {
             auto it=cmderMap.find(cmd);
             if(it!=cmderMap.end()){
