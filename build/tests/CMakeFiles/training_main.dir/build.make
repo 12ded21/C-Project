@@ -52,10 +52,10 @@ RM = "D:\ -- cmake-3.31.0-rc3-windows-x86_64\cmake-3.31.0-rc3-windows-x86_64\bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\14212\Desktop\Project
+CMAKE_SOURCE_DIR = C:\Users\14212\Desktop\C-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\14212\Desktop\Project\build
+CMAKE_BINARY_DIR = C:\Users\14212\Desktop\C-Project\build
 
 # Include any dependencies generated for this target.
 include tests/CMakeFiles/training_main.dir/depend.make
@@ -73,18 +73,18 @@ tests/CMakeFiles/training_main.dir/codegen:
 
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: tests/CMakeFiles/training_main.dir/flags.make
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: tests/CMakeFiles/training_main.dir/includes_CXX.rsp
-tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: C:/Users/14212/Desktop/Project/tests/ExecutorTest.cpp
+tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: C:/Users/14212/Desktop/C-Project/tests/ExecutorTest.cpp
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj: tests/CMakeFiles/training_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\14212\Desktop\Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
-	cd /d C:\Users\14212\Desktop\Project\build\tests && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj -MF CMakeFiles\training_main.dir\ExecutorTest.cpp.obj.d -o CMakeFiles\training_main.dir\ExecutorTest.cpp.obj -c C:\Users\14212\Desktop\Project\tests\ExecutorTest.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.obj -MF CMakeFiles\training_main.dir\ExecutorTest.cpp.obj.d -o CMakeFiles\training_main.dir\ExecutorTest.cpp.obj -c C:\Users\14212\Desktop\C-Project\tests\ExecutorTest.cpp
 
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/training_main.dir/ExecutorTest.cpp.i"
-	cd /d C:\Users\14212\Desktop\Project\build\tests && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\14212\Desktop\Project\tests\ExecutorTest.cpp > CMakeFiles\training_main.dir\ExecutorTest.cpp.i
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\14212\Desktop\C-Project\tests\ExecutorTest.cpp > CMakeFiles\training_main.dir\ExecutorTest.cpp.i
 
 tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/training_main.dir/ExecutorTest.cpp.s"
-	cd /d C:\Users\14212\Desktop\Project\build\tests && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\14212\Desktop\Project\tests\ExecutorTest.cpp -o CMakeFiles\training_main.dir\ExecutorTest.cpp.s
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\14212\Desktop\C-Project\tests\ExecutorTest.cpp -o CMakeFiles\training_main.dir\ExecutorTest.cpp.s
 
 # Object files for target training_main
 training_main_OBJECTS = \
@@ -101,18 +101,18 @@ tests/training_main.exe: lib/libgtest.a
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/linkLibs.rsp
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/objects1.rsp
 tests/training_main.exe: tests/CMakeFiles/training_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\14212\Desktop\Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable training_main.exe"
-	cd /d C:\Users\14212\Desktop\Project\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\training_main.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable training_main.exe"
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\training_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/CMakeFiles/training_main.dir/build: tests/training_main.exe
 .PHONY : tests/CMakeFiles/training_main.dir/build
 
 tests/CMakeFiles/training_main.dir/clean:
-	cd /d C:\Users\14212\Desktop\Project\build\tests && $(CMAKE_COMMAND) -P CMakeFiles\training_main.dir\cmake_clean.cmake
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests && $(CMAKE_COMMAND) -P CMakeFiles\training_main.dir\cmake_clean.cmake
 .PHONY : tests/CMakeFiles/training_main.dir/clean
 
 tests/CMakeFiles/training_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\14212\Desktop\Project C:\Users\14212\Desktop\Project\tests C:\Users\14212\Desktop\Project\build C:\Users\14212\Desktop\Project\build\tests C:\Users\14212\Desktop\Project\build\tests\CMakeFiles\training_main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\14212\Desktop\C-Project C:\Users\14212\Desktop\C-Project\tests C:\Users\14212\Desktop\C-Project\build C:\Users\14212\Desktop\C-Project\build\tests C:\Users\14212\Desktop\C-Project\build\tests\CMakeFiles\training_main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tests/CMakeFiles/training_main.dir/depend
 

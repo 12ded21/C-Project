@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/14212/Desktop/Project/tests/googletest
+# Install script for directory: C:/Users/14212/Desktop/C-Project/tests/googletest
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,13 +39,13 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("C:/Users/14212/Desktop/Project/build/tests/googletest/googletest/cmake_install.cmake")
+  include("C:/Users/14212/Desktop/C-Project/build/tests/googletest/googletest/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/14212/Desktop/Project/build/tests/googletest/install_local_manifest.txt"
+  file(WRITE "C:/Users/14212/Desktop/C-Project/build/tests/googletest/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

@@ -1,1 +1,1 @@
--IC:/Users/14212/Desktop/Project/tests/googletest/googletest/include -IC:/Users/14212/Desktop/Project/tests/googletest/googletest
+-I"C:/Users/14212/Desktop/C-Project/tests/googletest/googletest/include" -I"C:/Users/14212/Desktop/C-Project/tests/googletest/googletest"

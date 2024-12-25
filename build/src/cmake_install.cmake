@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/14212/Desktop/Project/src
+# Install script for directory: C:/Users/14212/Desktop/C-Project/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,6 +40,6 @@ endif()
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/14212/Desktop/Project/build/src/install_local_manifest.txt"
+  file(WRITE "C:/Users/14212/Desktop/C-Project/build/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

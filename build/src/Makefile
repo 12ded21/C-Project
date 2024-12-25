@@ -56,10 +56,10 @@ RM = "D:\ -- cmake-3.31.0-rc3-windows-x86_64\cmake-3.31.0-rc3-windows-x86_64\bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\14212\Desktop\Project
+CMAKE_SOURCE_DIR = C:\Users\14212\Desktop\C-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\14212\Desktop\Project\build
+CMAKE_BINARY_DIR = C:\Users\14212\Desktop\C-Project\build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -141,14 +141,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /d C:\Users\14212\Desktop\Project\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\14212\Desktop\Project\build\CMakeFiles C:\Users\14212\Desktop\Project\build\src\\CMakeFiles\progress.marks
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\14212\Desktop\Project\build\CMakeFiles 0
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(CMAKE_COMMAND) -E cmake_progress_start C:\Users\14212\Desktop\C-Project\build\CMakeFiles C:\Users\14212\Desktop\C-Project\build\src\\CMakeFiles\progress.marks
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/all
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\14212\Desktop\C-Project\build\CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/clean
 .PHONY : clean
 
 # The main clean target
@@ -157,22 +157,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /d C:\Users\14212\Desktop\Project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 src/CMakeFiles/training.dir/rule:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/training.dir/rule
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 src/CMakeFiles/training.dir/rule
 .PHONY : src/CMakeFiles/training.dir/rule
 
 # Convenience name for target.
@@ -181,7 +181,7 @@ training: src/CMakeFiles/training.dir/rule
 
 # fast build rule for target.
 training/fast:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
 .PHONY : training/fast
 
 ExecutorImpl.obj: ExecutorImpl.cpp.obj
@@ -189,7 +189,7 @@ ExecutorImpl.obj: ExecutorImpl.cpp.obj
 
 # target to build an object file
 ExecutorImpl.cpp.obj:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.obj
 .PHONY : ExecutorImpl.cpp.obj
 
 ExecutorImpl.i: ExecutorImpl.cpp.i
@@ -197,7 +197,7 @@ ExecutorImpl.i: ExecutorImpl.cpp.i
 
 # target to preprocess a source file
 ExecutorImpl.cpp.i:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.i
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.i
 .PHONY : ExecutorImpl.cpp.i
 
 ExecutorImpl.s: ExecutorImpl.cpp.s
@@ -205,7 +205,7 @@ ExecutorImpl.s: ExecutorImpl.cpp.s
 
 # target to generate assembly for a file
 ExecutorImpl.cpp.s:
-	cd /d C:\Users\14212\Desktop\Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.s
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.s
 .PHONY : ExecutorImpl.cpp.s
 
 # Help Target
@@ -236,6 +236,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /d C:\Users\14212\Desktop\Project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles\Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -52,10 +52,10 @@ RM = "D:\ -- cmake-3.31.0-rc3-windows-x86_64\cmake-3.31.0-rc3-windows-x86_64\bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\14212\Desktop\Project
+CMAKE_SOURCE_DIR = C:\Users\14212\Desktop\C-Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\14212\Desktop\Project\build
+CMAKE_BINARY_DIR = C:\Users\14212\Desktop\C-Project\build
 
 # Include any dependencies generated for this target.
 include tests/googletest/googletest/CMakeFiles/gtest_main.dir/depend.make
@@ -73,18 +73,18 @@ tests/googletest/googletest/CMakeFiles/gtest_main.dir/codegen:
 
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: tests/googletest/googletest/CMakeFiles/gtest_main.dir/flags.make
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: tests/googletest/googletest/CMakeFiles/gtest_main.dir/includes_CXX.rsp
-tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Users/14212/Desktop/Project/tests/googletest/googletest/src/gtest_main.cc
+tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: C:/Users/14212/Desktop/C-Project/tests/googletest/googletest/src/gtest_main.cc
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj: tests/googletest/googletest/CMakeFiles/gtest_main.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\14212\Desktop\Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
-	cd /d C:\Users\14212\Desktop\Project\build\tests\googletest\googletest && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\14212\Desktop\Project\tests\googletest\googletest\src\gtest_main.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj"
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj -MF CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj.d -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.obj -c C:\Users\14212\Desktop\C-Project\tests\googletest\googletest\src\gtest_main.cc
 
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/gtest_main.dir/src/gtest_main.cc.i"
-	cd /d C:\Users\14212\Desktop\Project\build\tests\googletest\googletest && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\14212\Desktop\Project\tests\googletest\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\14212\Desktop\C-Project\tests\googletest\googletest\src\gtest_main.cc > CMakeFiles\gtest_main.dir\src\gtest_main.cc.i
 
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/gtest_main.dir/src/gtest_main.cc.s"
-	cd /d C:\Users\14212\Desktop\Project\build\tests\googletest\googletest && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\14212\Desktop\Project\tests\googletest\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest && C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\c++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\14212\Desktop\C-Project\tests\googletest\googletest\src\gtest_main.cc -o CMakeFiles\gtest_main.dir\src\gtest_main.cc.s
 
 # Object files for target gtest_main
 gtest_main_OBJECTS = \
@@ -96,19 +96,19 @@ gtest_main_EXTERNAL_OBJECTS =
 lib/libgtest_main.a: tests/googletest/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.obj
 lib/libgtest_main.a: tests/googletest/googletest/CMakeFiles/gtest_main.dir/build.make
 lib/libgtest_main.a: tests/googletest/googletest/CMakeFiles/gtest_main.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\14212\Desktop\Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\lib\libgtest_main.a"
-	cd /d C:\Users\14212\Desktop\Project\build\tests\googletest\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
-	cd /d C:\Users\14212\Desktop\Project\build\tests\googletest\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=C:\Users\14212\Desktop\C-Project\build\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library ..\..\..\lib\libgtest_main.a"
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean_target.cmake
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\gtest_main.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/build: lib/libgtest_main.a
 .PHONY : tests/googletest/googletest/CMakeFiles/gtest_main.dir/build
 
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/clean:
-	cd /d C:\Users\14212\Desktop\Project\build\tests\googletest\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
+	cd /d C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest && $(CMAKE_COMMAND) -P CMakeFiles\gtest_main.dir\cmake_clean.cmake
 .PHONY : tests/googletest/googletest/CMakeFiles/gtest_main.dir/clean
 
 tests/googletest/googletest/CMakeFiles/gtest_main.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\14212\Desktop\Project C:\Users\14212\Desktop\Project\tests\googletest\googletest C:\Users\14212\Desktop\Project\build C:\Users\14212\Desktop\Project\build\tests\googletest\googletest C:\Users\14212\Desktop\Project\build\tests\googletest\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake "--color=$(COLOR)"
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\14212\Desktop\C-Project C:\Users\14212\Desktop\C-Project\tests\googletest\googletest C:\Users\14212\Desktop\C-Project\build C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest C:\Users\14212\Desktop\C-Project\build\tests\googletest\googletest\CMakeFiles\gtest_main.dir\DependInfo.cmake "--color=$(COLOR)"
 .PHONY : tests/googletest/googletest/CMakeFiles/gtest_main.dir/depend
 

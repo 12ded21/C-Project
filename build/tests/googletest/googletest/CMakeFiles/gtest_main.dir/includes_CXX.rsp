@@ -1,1 +1,1 @@
--isystem C:/Users/14212/Desktop/Project/tests/googletest/googletest/include -isystem C:/Users/14212/Desktop/Project/tests/googletest/googletest
+-isystem "C:/Users/14212/Desktop/C-Project/tests/googletest/googletest/include" -isystem "C:/Users/14212/Desktop/C-Project/tests/googletest/googletest"
