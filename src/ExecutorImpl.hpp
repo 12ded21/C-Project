@@ -5,7 +5,7 @@ namespace adas{
     private:
         Pose pose;
         bool fast{false};
-        //接口抽象，虚基类
+    //接口抽象，虚基类
     private:
         class ICommand{
         public :
