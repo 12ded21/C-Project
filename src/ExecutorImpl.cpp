@@ -1,5 +1,6 @@
 //.hpp文件用于声明；.cpp文件用于定义函数；名字空间可区分不同的开发者
 #include"ExecutorImpl.hpp"
+#include "Command.hpp"
 #include<iostream>
 #include<memory>
 namespace adas{
