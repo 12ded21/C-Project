@@ -1,2 +1,2 @@
-C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\ar.exe qc libtraining.a CMakeFiles/training.dir/Direction.cpp.obj CMakeFiles/training.dir/ExecutorImpl.cpp.obj CMakeFiles/training.dir/Point.cpp.obj CMakeFiles/training.dir/PoseHandler.cpp.obj
+C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\ar.exe qc libtraining.a CMakeFiles/training.dir/ActionGroup.cpp.obj CMakeFiles/training.dir/CmderFactory.cpp.obj CMakeFiles/training.dir/Direction.cpp.obj CMakeFiles/training.dir/ExecutorImpl.cpp.obj CMakeFiles/training.dir/Point.cpp.obj CMakeFiles/training.dir/PoseHandler.cpp.obj
 C:\Users\14212\x86_64-8.1.0-release-posix-sjlj-rt_v6-rev0\mingw64\bin\ranlib.exe libtraining.a

@@ -155,14 +155,14 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "training::@145eef247bfb46b6828c",
-					"jsonFile" : "target-training-d4360bac927f41aad62a.json",
+					"jsonFile" : "target-training-6aba88c12a404e885daa.json",
 					"name" : "training",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 2,
 					"id" : "training_main::@a44f0ac069e85531cdee",
-					"jsonFile" : "target-training_main-01626b6ee309401292d8.json",
+					"jsonFile" : "target-training_main-829234330ccc4cb1db8c.json",
 					"name" : "training_main",
 					"projectIndex" : 0
 				}

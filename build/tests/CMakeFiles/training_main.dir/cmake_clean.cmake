@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj.d"
+  "CMakeFiles/training_main.dir/ExecutorTurnRoundTest.cpp.obj"
+  "CMakeFiles/training_main.dir/ExecutorTurnRoundTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/PoseEq.cpp.obj"
   "CMakeFiles/training_main.dir/PoseEq.cpp.obj.d"
   "libtraining_main.dll.a"

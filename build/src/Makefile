@@ -184,6 +184,54 @@ training/fast:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
 .PHONY : training/fast
 
+ActionGroup.obj: ActionGroup.cpp.obj
+.PHONY : ActionGroup.obj
+
+# target to build an object file
+ActionGroup.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ActionGroup.cpp.obj
+.PHONY : ActionGroup.cpp.obj
+
+ActionGroup.i: ActionGroup.cpp.i
+.PHONY : ActionGroup.i
+
+# target to preprocess a source file
+ActionGroup.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ActionGroup.cpp.i
+.PHONY : ActionGroup.cpp.i
+
+ActionGroup.s: ActionGroup.cpp.s
+.PHONY : ActionGroup.s
+
+# target to generate assembly for a file
+ActionGroup.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ActionGroup.cpp.s
+.PHONY : ActionGroup.cpp.s
+
+CmderFactory.obj: CmderFactory.cpp.obj
+.PHONY : CmderFactory.obj
+
+# target to build an object file
+CmderFactory.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/CmderFactory.cpp.obj
+.PHONY : CmderFactory.cpp.obj
+
+CmderFactory.i: CmderFactory.cpp.i
+.PHONY : CmderFactory.i
+
+# target to preprocess a source file
+CmderFactory.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/CmderFactory.cpp.i
+.PHONY : CmderFactory.cpp.i
+
+CmderFactory.s: CmderFactory.cpp.s
+.PHONY : CmderFactory.s
+
+# target to generate assembly for a file
+CmderFactory.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/CmderFactory.cpp.s
+.PHONY : CmderFactory.cpp.s
+
 Direction.obj: Direction.cpp.obj
 .PHONY : Direction.obj
 
@@ -294,6 +342,12 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training
+	@echo ... ActionGroup.obj
+	@echo ... ActionGroup.i
+	@echo ... ActionGroup.s
+	@echo ... CmderFactory.obj
+	@echo ... CmderFactory.i
+	@echo ... CmderFactory.s
 	@echo ... Direction.obj
 	@echo ... Direction.i
 	@echo ... Direction.s

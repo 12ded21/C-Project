@@ -256,6 +256,30 @@ ExecutorTest.cpp.s:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorTest.cpp.s
 .PHONY : ExecutorTest.cpp.s
 
+ExecutorTurnRoundTest.obj: ExecutorTurnRoundTest.cpp.obj
+.PHONY : ExecutorTurnRoundTest.obj
+
+# target to build an object file
+ExecutorTurnRoundTest.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorTurnRoundTest.cpp.obj
+.PHONY : ExecutorTurnRoundTest.cpp.obj
+
+ExecutorTurnRoundTest.i: ExecutorTurnRoundTest.cpp.i
+.PHONY : ExecutorTurnRoundTest.i
+
+# target to preprocess a source file
+ExecutorTurnRoundTest.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorTurnRoundTest.cpp.i
+.PHONY : ExecutorTurnRoundTest.cpp.i
+
+ExecutorTurnRoundTest.s: ExecutorTurnRoundTest.cpp.s
+.PHONY : ExecutorTurnRoundTest.s
+
+# target to generate assembly for a file
+ExecutorTurnRoundTest.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorTurnRoundTest.cpp.s
+.PHONY : ExecutorTurnRoundTest.cpp.s
+
 PoseEq.obj: PoseEq.cpp.obj
 .PHONY : PoseEq.obj
 
@@ -303,6 +327,9 @@ help:
 	@echo ... ExecutorTest.obj
 	@echo ... ExecutorTest.i
 	@echo ... ExecutorTest.s
+	@echo ... ExecutorTurnRoundTest.obj
+	@echo ... ExecutorTurnRoundTest.i
+	@echo ... ExecutorTurnRoundTest.s
 	@echo ... PoseEq.obj
 	@echo ... PoseEq.i
 	@echo ... PoseEq.s
