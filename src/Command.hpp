@@ -10,9 +10,9 @@ namespace adas{
         {
             if (poseHandler.IsFast())
             {
-                poseHandler.Move();
+                poseHandler.IsReverse() ? poseHandler.Backward() : poseHandler.Forward();
             }
-            poseHandler.Move();
+            poseHandler.IsReverse() ? poseHandler.Backward() : poseHandler.Forward();
         }
     };
     // 左转子类
@@ -23,9 +23,9 @@ namespace adas{
         {
             if (poseHandler.IsFast())
             {
-                poseHandler.Move();
+                poseHandler.IsReverse() ? poseHandler.Backward() : poseHandler.Forward();
             }
-            poseHandler.TurnLeft();
+            poseHandler.IsReverse() ? poseHandler.TurnRight() : poseHandler.TurnLeft();
         }
     };
     // 右转子类
@@ -36,9 +36,9 @@ namespace adas{
         {
             if (poseHandler.IsFast())
             {
-                poseHandler.Move();
+                poseHandler.IsReverse() ? poseHandler.Backward() : poseHandler.Forward();
             }
-            poseHandler.TurnRight();
+            poseHandler.IsReverse() ? poseHandler.TurnLeft() : poseHandler.TurnRight();
         }
     };
     // 加速子类
@@ -50,5 +50,13 @@ namespace adas{
             poseHandler.Fast();
         }
     };
-
+    //倒车子类
+    class ReverseCommand final
+    {
+    public:
+        void operator()(PoseHandler& poseHandler) const noexcept
+        {
+            poseHandler.Reverse();
+        }
+    };
 }
