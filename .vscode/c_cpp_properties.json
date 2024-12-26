@@ -4,6 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**"
+               // "${workspaceFolder}/tests/googletest/googletest/include"
             ],
             "defines": [],
             "cStandard": "c17",

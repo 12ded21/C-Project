@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/training_main.dir/ExecutorBackTest.cpp.obj"
+  "CMakeFiles/training_main.dir/ExecutorBackTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj"
   "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"

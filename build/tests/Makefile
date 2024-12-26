@@ -184,6 +184,30 @@ training_main/fast:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/build
 .PHONY : training_main/fast
 
+ExecutorBackTest.obj: ExecutorBackTest.cpp.obj
+.PHONY : ExecutorBackTest.obj
+
+# target to build an object file
+ExecutorBackTest.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBackTest.cpp.obj
+.PHONY : ExecutorBackTest.cpp.obj
+
+ExecutorBackTest.i: ExecutorBackTest.cpp.i
+.PHONY : ExecutorBackTest.i
+
+# target to preprocess a source file
+ExecutorBackTest.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBackTest.cpp.i
+.PHONY : ExecutorBackTest.cpp.i
+
+ExecutorBackTest.s: ExecutorBackTest.cpp.s
+.PHONY : ExecutorBackTest.s
+
+# target to generate assembly for a file
+ExecutorBackTest.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBackTest.cpp.s
+.PHONY : ExecutorBackTest.cpp.s
+
 ExecutorFastTest.obj: ExecutorFastTest.cpp.obj
 .PHONY : ExecutorFastTest.obj
 
@@ -270,6 +294,9 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training_main
+	@echo ... ExecutorBackTest.obj
+	@echo ... ExecutorBackTest.i
+	@echo ... ExecutorBackTest.s
 	@echo ... ExecutorFastTest.obj
 	@echo ... ExecutorFastTest.i
 	@echo ... ExecutorFastTest.s
