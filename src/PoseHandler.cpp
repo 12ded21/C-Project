@@ -1,7 +1,7 @@
 #include "PoseHandler.hpp"
 namespace adas{
-PoseHandler::PoseHandler(const Pose& pose) : pose(pose){}
-void PoseHandler::Move(){
+PoseHandler::PoseHandler(const Pose& pose) noexcept : pose(pose){}
+void PoseHandler::Move()noexcept {
     if (pose.heading == 'E'){
         ++pose.x;
     }
@@ -18,7 +18,7 @@ void PoseHandler::Move(){
         --pose.y;
     }
 }
-void PoseHandler::TurnLeft(){
+void PoseHandler::TurnLeft()noexcept{
     if (pose.heading == 'E')
     {
         pose.heading = 'N';
@@ -36,7 +36,7 @@ void PoseHandler::TurnLeft(){
         pose.heading = 'E';
     }
 }
-void PoseHandler::TurnRight(){
+void PoseHandler::TurnRight()noexcept{
     if (pose.heading == 'E')
     {
         pose.heading = 'S';
@@ -54,14 +54,15 @@ void PoseHandler::TurnRight(){
         pose.heading = 'E';
     }
 }
-Pose PoseHandler::Query(){
+Pose PoseHandler::Query()const noexcept{
     return pose;
 }
 
-void PoseHandler::Fast() {
+void PoseHandler::Fast()noexcept {
     fast = !fast;
 }
-bool PoseHandler::IsFast(){
+bool PoseHandler::IsFast() const noexcept
+{
     return fast;
 }
 } 

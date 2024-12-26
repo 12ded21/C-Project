@@ -6,19 +6,20 @@ namespace adas{
         PoseHandler poseHandler;
     //接口抽象，虚基类
     public:
-        void Move(void);
-        void TurnLeft(void);
-        void TurnRight(void);
-        void Fast(void);
-        bool IsFast(void);
+        /*void Move(void) noexcept;
+        void TurnLeft(void) noexcept;
+        void TurnRight(void) noexcept;
+        void Fast(void) noexcept;
+        bool IsFast(void) noexcept;*/
+
     public:
-        ExecutorImpl(const Pose& p = {0,0,'N'});
-        ~ExecutorImpl(void) = default;
+        explicit ExecutorImpl(const Pose& p = {0,0,'N'}) noexcept;
+        ~ExecutorImpl(void) noexcept = default;
 
         ExecutorImpl(const Executor&) = delete;
         ExecutorImpl& operator=(const Executor&) = delete;
 
-        void Execute(const std::string& command);
-        Pose Query(void);
+        void Execute(const std::string& command) noexcept override;
+        Pose Query(void)const noexcept override;
     };
 }

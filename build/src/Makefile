@@ -184,6 +184,30 @@ training/fast:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/build
 .PHONY : training/fast
 
+Direction.obj: Direction.cpp.obj
+.PHONY : Direction.obj
+
+# target to build an object file
+Direction.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Direction.cpp.obj
+.PHONY : Direction.cpp.obj
+
+Direction.i: Direction.cpp.i
+.PHONY : Direction.i
+
+# target to preprocess a source file
+Direction.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Direction.cpp.i
+.PHONY : Direction.cpp.i
+
+Direction.s: Direction.cpp.s
+.PHONY : Direction.s
+
+# target to generate assembly for a file
+Direction.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Direction.cpp.s
+.PHONY : Direction.cpp.s
+
 ExecutorImpl.obj: ExecutorImpl.cpp.obj
 .PHONY : ExecutorImpl.obj
 
@@ -207,6 +231,30 @@ ExecutorImpl.s: ExecutorImpl.cpp.s
 ExecutorImpl.cpp.s:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/ExecutorImpl.cpp.s
 .PHONY : ExecutorImpl.cpp.s
+
+Point.obj: Point.cpp.obj
+.PHONY : Point.obj
+
+# target to build an object file
+Point.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Point.cpp.obj
+.PHONY : Point.cpp.obj
+
+Point.i: Point.cpp.i
+.PHONY : Point.i
+
+# target to preprocess a source file
+Point.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Point.cpp.i
+.PHONY : Point.cpp.i
+
+Point.s: Point.cpp.s
+.PHONY : Point.s
+
+# target to generate assembly for a file
+Point.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f src\CMakeFiles\training.dir\build.make src/CMakeFiles/training.dir/Point.cpp.s
+.PHONY : Point.cpp.s
 
 PoseHandler.obj: PoseHandler.cpp.obj
 .PHONY : PoseHandler.obj
@@ -246,9 +294,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... test
 	@echo ... training
+	@echo ... Direction.obj
+	@echo ... Direction.i
+	@echo ... Direction.s
 	@echo ... ExecutorImpl.obj
 	@echo ... ExecutorImpl.i
 	@echo ... ExecutorImpl.s
+	@echo ... Point.obj
+	@echo ... Point.i
+	@echo ... Point.s
 	@echo ... PoseHandler.obj
 	@echo ... PoseHandler.i
 	@echo ... PoseHandler.s
