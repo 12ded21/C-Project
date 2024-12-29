@@ -4,6 +4,7 @@ namespace adas{
     class ExecutorImpl final : public Executor{
     private:
         PoseHandler poseHandler;
+        std::string kind;
     //接口抽象，虚基类
     public:
         /*void Move(void) noexcept;
@@ -13,7 +14,7 @@ namespace adas{
         bool IsFast(void) noexcept;*/
 
     public:
-        explicit ExecutorImpl(const Pose& p = {0,0,'N'}) noexcept;
+        explicit ExecutorImpl(const Pose& p = {0,0,'N'},const std::string& kind = "car") noexcept;
         ~ExecutorImpl(void) noexcept = default;
 
         ExecutorImpl(const Executor&) = delete;

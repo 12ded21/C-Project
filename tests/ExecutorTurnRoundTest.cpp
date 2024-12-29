@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+
 #include "Executor.hpp"
 #include "PoseEq.hpp"
 namespace adas
@@ -6,7 +7,7 @@ namespace adas
 TEST(ExecutorTurnRoundTest, should_normal_tr_build_left_forward_left)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("TR");
     // then
@@ -16,7 +17,7 @@ TEST(ExecutorTurnRoundTest, should_normal_tr_build_left_forward_left)
 TEST(ExecutorTurnRoundTest, should_fast_tr_build_forward_left_forward_left)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("FTR");
     // then
@@ -26,7 +27,7 @@ TEST(ExecutorTurnRoundTest, should_fast_tr_build_forward_left_forward_left)
 TEST(ExecutorTurnRoundTest, in_the_B_state_the_reverse_command_will_be_ignored)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BTR");
     // then

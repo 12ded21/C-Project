@@ -6,7 +6,8 @@
 #include "PoseHandler.hpp"
 namespace adas
 {
-class MoveCommand final
+// 汽车移动子类
+class MoveCommand_car final
 {
 public:
     ActionGroup operator()(PoseHandler& poseHandler) const noexcept
@@ -21,8 +22,8 @@ public:
         return actionGroup;
     }
 };
-// 左转子类
-class TurnLeftCommand final
+// 汽车左转子类
+class TurnLeftCommand_car final
 {
 public:
     ActionGroup operator()(PoseHandler& poseHandler) const noexcept
@@ -37,8 +38,8 @@ public:
         return actionGroup;
     }
 };
-// 右转子类
-class TurnRightCommand final
+// 汽车右转子类
+class TurnRightCommand_car final
 {
 public:
     ActionGroup operator()(PoseHandler& poseHandler) const noexcept
@@ -54,8 +55,8 @@ public:
         return actionGroup;
     }
 };
-// 加速子类
-class FastCommand final
+// 汽车加速子类
+class FastCommand_car final
 {
 public:
     ActionGroup operator()(PoseHandler& poseHandler) const noexcept
@@ -66,8 +67,8 @@ public:
         return actionGroup;
     }
 };
-// 倒车子类
-class ReverseCommand final
+// 汽车倒车子类
+class ReverseCommand_car final
 {
 public:
     ActionGroup operator()(PoseHandler& poseHandler) const noexcept
@@ -78,8 +79,8 @@ public:
         return actionGroup;
     }
 };
-// 掉头子类
-class TurnRoundCommand final
+// 汽车掉头子类
+class TurnRoundCommand_car final
 {
 public:
     ActionGroup operator()(PoseHandler& poseHandler) const noexcept
@@ -95,4 +96,85 @@ public:
             {ActionType::TURNLEFT_ACTION, ActionType::FORWARD_1_STEP_ACTION, ActionType::TURNLEFT_ACTION});
     }
 };
-} 
+
+
+// 跑车移动子类
+// 一次移动2格
+class MoveCommand_sport final
+{
+public:
+    ActionGroup operator()(PoseHandler& poseHandler) const noexcept
+    {
+        ActionGroup actionGroup;
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        return actionGroup;
+    }
+};
+// 跑车左转子类
+// 先左转再前进
+class TurnLeftCommand_sport final
+{
+public:
+    ActionGroup operator()(PoseHandler& poseHandler) const noexcept
+    {
+        ActionGroup actionGroup;
+        actionGroup.PushAction(ActionType::TURNLEFT_ACTION);
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        return actionGroup;
+    }
+};
+// 跑车右转子类
+// 先右转再前进
+class TurnRightCommand_sport final
+{
+public:
+    ActionGroup operator()(PoseHandler& poseHandler) const noexcept
+    {
+        ActionGroup actionGroup;
+        actionGroup.PushAction(ActionType::TURNRIGHT_ACTION);
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        return actionGroup;
+    }
+};
+
+
+// 公交车移动子类
+// 一次移动1格
+class MoveCommand_bus final
+{
+public:
+    ActionGroup operator()(PoseHandler& poseHandler) const noexcept
+    {
+        ActionGroup actionGroup;
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        return actionGroup;
+    }
+};
+// 公交车左转子类
+// 先前进再左转
+class TurnLeftCommand_bus final
+{
+public:
+    ActionGroup operator()(PoseHandler& poseHandler) const noexcept
+    {
+        ActionGroup actionGroup;
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        actionGroup.PushAction(ActionType::TURNLEFT_ACTION);
+        return actionGroup;
+    }
+};
+// 公交车右转子类
+// 先前进再右转
+class TurnRightCommand_bus final
+{
+public:
+    ActionGroup operator()(PoseHandler& poseHandler) const noexcept
+    {
+        ActionGroup actionGroup;
+        actionGroup.PushAction(ActionType::FORWARD_1_STEP_ACTION);
+        actionGroup.PushAction(ActionType::TURNRIGHT_ACTION);
+        return actionGroup;
+    }
+};
+}  // namespace adas

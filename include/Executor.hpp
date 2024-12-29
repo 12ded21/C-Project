@@ -8,7 +8,7 @@ namespace adas{
     };
     class Executor{
     public:
-        static Executor * NewExecutor(const Pose& pose={0,0,'N'}) noexcept;
+        static Executor * NewExecutor(const Pose& pose={0,0,'N'}, const std::string& kind = "car") noexcept;
     public:
         Executor(void) = default;
         virtual ~Executor(void) = default;

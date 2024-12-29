@@ -5,7 +5,7 @@ namespace adas{
 TEST(ExecutorBackTest, should_return_x_minus_1_given_status_is_back_command_is_M_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BM");
     // then
@@ -15,7 +15,7 @@ TEST(ExecutorBackTest, should_return_x_minus_1_given_status_is_back_command_is_M
 TEST(ExecutorBackTest, should_return_facing_S_given_status_is_back_command_is_L_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BL");
     // then
@@ -25,7 +25,7 @@ TEST(ExecutorBackTest, should_return_facing_S_given_status_is_back_command_is_L_
 TEST(ExecutorBackTest, should_return_facing_N_given_status_is_back_command_is_R_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BR");
     // then
@@ -35,7 +35,7 @@ TEST(ExecutorBackTest, should_return_facing_N_given_status_is_back_command_is_R_
 TEST(ExecutorBackTest, should_return_x_plus_2_given_status_is_fast_command_is_M_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("FM");
     // then
@@ -45,7 +45,7 @@ TEST(ExecutorBackTest, should_return_x_plus_2_given_status_is_fast_command_is_M_
 TEST(ExecutorBackTest, should_return_x_plus_1_facing_N_given_status_is_fast_command_is_L_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("FL");
     // then
@@ -55,7 +55,7 @@ TEST(ExecutorBackTest, should_return_x_plus_1_facing_N_given_status_is_fast_comm
 TEST(ExecutorBackTest, should_return_x_plus_1_facing_S_given_status_is_fast_command_is_R_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("FR");
     // then
@@ -65,7 +65,7 @@ TEST(ExecutorBackTest, should_return_x_plus_1_facing_S_given_status_is_fast_comm
 TEST(ExecutorBackTest, should_return_x_minus_2_given_status_is_back_fast_command_is_M_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BFM");
     // then
@@ -75,7 +75,7 @@ TEST(ExecutorBackTest, should_return_x_minus_2_given_status_is_back_fast_command
 TEST(ExecutorBackTest, should_return_x_minus_1_facing_S_given_status_is_back_fast_command_is_L_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BFL");
     // then
@@ -85,7 +85,7 @@ TEST(ExecutorBackTest, should_return_x_minus_1_facing_S_given_status_is_back_fas
 TEST(ExecutorBackTest, should_return_x_minus_1_facing_N_given_status_is_back_fast_command_is_R_and_facing_is_E)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'E'}, "car"));
     // when
     executor->Execute("BFR");
     // then
@@ -95,7 +95,7 @@ TEST(ExecutorBackTest, should_return_x_minus_1_facing_N_given_status_is_back_fas
 TEST(ExecutorBackTest, should_return_y_plus_1_given_status_is_back_back_command_is_M_and_facing_is_N)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'N'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'N'}, "car"));
     // when
     executor->Execute("BBM");
     // then
@@ -105,7 +105,7 @@ TEST(ExecutorBackTest, should_return_y_plus_1_given_status_is_back_back_command_
 TEST(ExecutorBackTest, should_return_y_plus_1_given_status_is_fast_fast_command_is_M_and_facing_is_N)
 {
     // given
-    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'N'}));
+    std::unique_ptr<Executor> executor(Executor::NewExecutor({0, 0, 'N'}, "car"));
     // when
     executor->Execute("FFM");
     // then

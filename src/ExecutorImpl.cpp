@@ -8,13 +8,13 @@
 #include<memory>
 namespace adas{
     //新建一个对象，返回的是基类的指针
-    Executor* Executor::NewExecutor(const Pose& pose)noexcept{
-        return new ExecutorImpl(pose);
+    Executor* Executor::NewExecutor(const Pose& pose,const std::string& kind)noexcept{
+        return new ExecutorImpl(pose,kind);
     }
     //构造函数
-    ExecutorImpl::ExecutorImpl(const Pose& pose) noexcept : poseHandler(pose){}
+    ExecutorImpl::ExecutorImpl(const Pose& pose,const std::string& kind) noexcept : poseHandler(pose), kind(kind){}
     void ExecutorImpl::Execute(const std::string& commands)noexcept{
-        const auto cmders = Singleton<CmderFactory>::Instance().GetCmders(commands);
+        const auto cmders = Singleton<CmderFactory>::Instance().GetCmders(commands,kind);
         std::for_each(cmders.begin(),cmders.end(),[this](const Cmder& cmder) noexcept {cmder(poseHandler).DoOperate(poseHandler);}); 
     }
     //查询
