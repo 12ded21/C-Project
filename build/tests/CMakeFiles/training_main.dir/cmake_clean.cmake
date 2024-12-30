@@ -1,8 +1,12 @@
 file(REMOVE_RECURSE
   "CMakeFiles/training_main.dir/ExecutorBackTest.cpp.obj"
   "CMakeFiles/training_main.dir/ExecutorBackTest.cpp.obj.d"
+  "CMakeFiles/training_main.dir/ExecutorBusTest.cpp.obj"
+  "CMakeFiles/training_main.dir/ExecutorBusTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj"
   "CMakeFiles/training_main.dir/ExecutorFastTest.cpp.obj.d"
+  "CMakeFiles/training_main.dir/ExecutorSportTest.cpp.obj"
+  "CMakeFiles/training_main.dir/ExecutorSportTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj"
   "CMakeFiles/training_main.dir/ExecutorTest.cpp.obj.d"
   "CMakeFiles/training_main.dir/ExecutorTurnRoundTest.cpp.obj"

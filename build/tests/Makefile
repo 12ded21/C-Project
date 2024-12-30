@@ -208,6 +208,30 @@ ExecutorBackTest.cpp.s:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBackTest.cpp.s
 .PHONY : ExecutorBackTest.cpp.s
 
+ExecutorBusTest.obj: ExecutorBusTest.cpp.obj
+.PHONY : ExecutorBusTest.obj
+
+# target to build an object file
+ExecutorBusTest.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBusTest.cpp.obj
+.PHONY : ExecutorBusTest.cpp.obj
+
+ExecutorBusTest.i: ExecutorBusTest.cpp.i
+.PHONY : ExecutorBusTest.i
+
+# target to preprocess a source file
+ExecutorBusTest.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBusTest.cpp.i
+.PHONY : ExecutorBusTest.cpp.i
+
+ExecutorBusTest.s: ExecutorBusTest.cpp.s
+.PHONY : ExecutorBusTest.s
+
+# target to generate assembly for a file
+ExecutorBusTest.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorBusTest.cpp.s
+.PHONY : ExecutorBusTest.cpp.s
+
 ExecutorFastTest.obj: ExecutorFastTest.cpp.obj
 .PHONY : ExecutorFastTest.obj
 
@@ -231,6 +255,30 @@ ExecutorFastTest.s: ExecutorFastTest.cpp.s
 ExecutorFastTest.cpp.s:
 	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorFastTest.cpp.s
 .PHONY : ExecutorFastTest.cpp.s
+
+ExecutorSportTest.obj: ExecutorSportTest.cpp.obj
+.PHONY : ExecutorSportTest.obj
+
+# target to build an object file
+ExecutorSportTest.cpp.obj:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorSportTest.cpp.obj
+.PHONY : ExecutorSportTest.cpp.obj
+
+ExecutorSportTest.i: ExecutorSportTest.cpp.i
+.PHONY : ExecutorSportTest.i
+
+# target to preprocess a source file
+ExecutorSportTest.cpp.i:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorSportTest.cpp.i
+.PHONY : ExecutorSportTest.cpp.i
+
+ExecutorSportTest.s: ExecutorSportTest.cpp.s
+.PHONY : ExecutorSportTest.s
+
+# target to generate assembly for a file
+ExecutorSportTest.cpp.s:
+	cd /d C:\Users\14212\Desktop\C-Project\build && $(MAKE) $(MAKESILENT) -f tests\CMakeFiles\training_main.dir\build.make tests/CMakeFiles/training_main.dir/ExecutorSportTest.cpp.s
+.PHONY : ExecutorSportTest.cpp.s
 
 ExecutorTest.obj: ExecutorTest.cpp.obj
 .PHONY : ExecutorTest.obj
@@ -321,9 +369,15 @@ help:
 	@echo ... ExecutorBackTest.obj
 	@echo ... ExecutorBackTest.i
 	@echo ... ExecutorBackTest.s
+	@echo ... ExecutorBusTest.obj
+	@echo ... ExecutorBusTest.i
+	@echo ... ExecutorBusTest.s
 	@echo ... ExecutorFastTest.obj
 	@echo ... ExecutorFastTest.i
 	@echo ... ExecutorFastTest.s
+	@echo ... ExecutorSportTest.obj
+	@echo ... ExecutorSportTest.i
+	@echo ... ExecutorSportTest.s
 	@echo ... ExecutorTest.obj
 	@echo ... ExecutorTest.i
 	@echo ... ExecutorTest.s
